@@ -16,6 +16,8 @@ class Calculator:
 
     # TODO: Implement the following function to calculate the square root of a number.
     def square_root(self, x):
+        if x < 0:
+         raise ValueError("Cannot calculate square root of a negative number.")
         return math.sqrt(x)
 
 
