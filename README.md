@@ -36,8 +36,7 @@ Step16: Raised a pull request from dev branch to main branch. got it approved an
 
 <br/>
 
-<h2>Q3.<h2/>
-  <br/>
+
   
 Q.3: In this same GitHub repository, create a new branch ‘geometry-calculator’, we'll work on a simple Python program that calculates the area of a circle and the area of a rectangle. We'll use Git stash to switch between working on multiple features (calculating circle area and calculating rectangle area) without committing incomplete changes.
 
