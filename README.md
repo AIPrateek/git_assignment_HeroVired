@@ -34,3 +34,56 @@ Step14: Added my friend as a collaborator for the repo.
 Step15: Raised a pull request from feature branch to dev branch. got it approved and merged both the branches.
 Step16: Raised a pull request from dev branch to main branch. got it approved and merged both the branches.
 
+<br/>
+
+<h1>Q3.<h1/>
+Q.3: In this same GitHub repository, create a new branch ‘geometry-calculator’, we'll work on a simple Python program that calculates the area of a circle and the area of a rectangle. We'll use Git stash to switch between working on multiple features (calculating circle area and calculating rectangle area) without committing incomplete changes.
+
+import math class GeometryCalculator: def calculate_circle_area(self, radius): return math.pi * radius ** 2
+
+def calculate_rectangle_area(self, length, width): return length * width
+
+if name == "main": calculator = GeometryCalculator()
+
+TODO: Implement the feature to calculate the area of a circle radius = 5 print(f"The area of the circle with radius {radius} = {calculator.calculate_circle_area(radius)}")
+
+TODO: Implement the feature to calculate the area of a rectangle # length = 10 width = 6 print(f"The area of the rectangle with length {length} and width {width} = {calculator.calculate_rectangle_area(length, width)}")
+
+Workflow Steps: a. Create a New Branch:
+
+Create a new branch named "feature/circle-area" to work on the circle area feature b. Stash Changes for Circle Area Feature:
+Before committing the changes, stash them using git stash to save the incomplete feature implementation.
+Verify that the working directory is clean c. Create a New Branch for Rectangle Area Feature:
+Create a new branch named "feature/rectangle-area" to work on the rectangle area d. Stash Changes for Rectangle Area Feature:
+Before committing the changes, stash them using git stash to save the incomplete feature implementation.
+Verify that the working directory is clean e. Switch Back to Circle Area Branch:
+Switch back to the "feature/circle-area" branch to continue working on the circle area feature.
+Retrieve the stashed changes
+Complete the circle area feature implementation and save the changes. f. Commit and Push Circle Area Feature: g. Switch Back to Rectangle Area Branch:
+Switch back to the "feature/rectangle-area" branch to continue working on the rectangle area feature.
+Retrieve the stashed changes
+Complete the rectangle area feature implementation and save the changes. h. Commit and Push Rectangle Area Feature i. Create Pull Requests:
+Create a pull request to the ‘dev’ branch. j. Review and Merge
+Have another team member or reviewer review your pull requests. - After receiving approval, merge both pull requests into the main branch.
+Answer
+Step1: git checkout -b geometry-calculator
+Step2: Made the required changes in the new python file geometry.py and saved it.
+Step3: git add .
+Step4: git commit -m "message"
+Step5: git push -u origin geometry-calculator
+Step6: git checkout -b feature/circle-area
+Step7: Made the required change in the geometry file
+Step8: git stash
+Step9: git checkout geometry-calculator
+Step10: git checkout -b feature/rectangle-area
+Step11: Made the required change in the geometry file
+Step12: git stash
+Step13: git checout feature/circle-area
+Step14: git stash list
+Step15: git add .
+Step16: git stash apply stash@{1}
+Step17: git commit -m 'messsage'
+Step18: git push -u origin feature/circle-area
+Step19: Repeated the same steps from Step13 to Step18 for branch feature/rectangle-area
+Step20: Requested two pull requests to merge both feature branches to dev, got it approved and merged.
+Step21: Requested one pull request to merge dev to main, got it approved and merged.
